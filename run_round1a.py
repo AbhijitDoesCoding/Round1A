@@ -11,8 +11,8 @@ from round1a_outline_extractor import process_round1a
 def main():
     """Main function to run Round 1A"""
     # Default directories
-    input_dir = "input"
-    output_dir = "output"
+    input_dir = "/app/input"
+    output_dir = "/app/output"
     
     # Check if custom directories are provided
     if len(sys.argv) >= 2:
