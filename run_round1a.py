@@ -6,7 +6,7 @@ Runner script for Round 1A - PDF Outline Extraction
 import os
 import sys
 from pathlib import Path
-from round1a_outline_extractor import process_round1a
+from round1a_outline_extractor import process_pdfs
 
 def main():
     """Main function to run Round 1A"""
@@ -42,7 +42,8 @@ def main():
     
     # Process PDFs
     print("\n🚀 Starting Round 1A processing...")
-    process_round1a(input_dir, output_dir)
+    process_pdfs(input_dir, output_dir)
+
     
     print("\n✅ Round 1A processing complete!")
     print(f"Check the '{output_dir}' directory for JSON output files.")
